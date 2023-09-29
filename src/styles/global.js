@@ -12,7 +12,27 @@ export default createGlobalStyle`
     }
 
     body {
-        font-size: 1.6rem;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+        
+        font-size: 1.6rem;
+        color: ${({ theme }) => theme.COLORS.WHITE};
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body, input, textarea, button {
+        font-family: 'Roboto Slab', serif;
+        outline: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    button, a {
+        cursor:pointer;
+    }
+
+    button:hover, a:hover {
+        filter: brightness(0.9);
     }
 `;
