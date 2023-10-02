@@ -1,10 +1,11 @@
 import { Container, Background, Form } from "./styles";
+import { Link } from "react-router-dom";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { FiLock, FiMail, FiUser } from "react-icons/fi";
 import { MdArrowBack } from "react-icons/md";
 
-export default function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <Form>
@@ -21,10 +22,10 @@ export default function SignIn() {
 
         <Button title="Entrar" />
 
-        <a href="#">
+        <Link to="/">
           <MdArrowBack size={20} />
           Voltar para o login
-        </a>
+        </Link>
       </Form>
       <Background />
     </Container>
