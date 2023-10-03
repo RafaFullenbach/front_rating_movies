@@ -17,6 +17,21 @@ export default createGlobalStyle`
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.WHITE};
         -webkit-font-smoothing: antialiased;
+        
+
+        ::-webkit-scrollbar {
+            width: 0.8rem;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: ${({ theme }) => theme.COLORS.PINK};
+
+            border-radius: 0.8rem;
+        }
     }
 
     body, input, textarea, button {
