@@ -17,7 +17,7 @@ export function Header() {
           <Link to="#">sair</Link>
         </div>
 
-        <Link to="#">
+        <Link to="/profile">
           <img
             src="https://github.com/RafaFullenbach.png"
             alt="Foto do usuário"
