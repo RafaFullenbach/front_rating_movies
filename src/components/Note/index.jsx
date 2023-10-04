@@ -11,16 +11,16 @@ export function Note({ data, ...rest }) {
 
   while (rating > 0) {
     if (rating < 1) {
-      stars.push(<BsStarHalf size={12} key={id++} />);
+      stars.push(<BsStarHalf size={14} key={id++} />);
       rating--;
     } else {
-      stars.push(<BsStarFill size={12} key={id++} />);
+      stars.push(<BsStarFill size={14} key={id++} />);
       rating--;
     }
   }
 
   while (restStars >= 1) {
-    stars.push(<BsStar size={12} key={id++} />);
+    stars.push(<BsStar size={14} key={id++} />);
     restStars--;
   }
 
