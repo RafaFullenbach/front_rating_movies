@@ -8,6 +8,7 @@ export default {
     GRAY_200: "hsla(270, 5%, 58%, 1)",
     GRAY_100: "hsla(273, 10%, 79%, 1)",
     WHITE: "hsla(26, 37%, 93%, 1)",
+    BLACK: "hsla(255, 11%, 5%, 1)",
     PINK: "hsla(349, 100%, 76%, 1)",
   },
 };
