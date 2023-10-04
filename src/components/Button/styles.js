@@ -8,10 +8,12 @@ export const Container = styled.button`
   width: 100%;
   height: 5.6rem;
 
-  background-color: ${({ theme }) => theme.COLORS.PINK};
+  background-color: ${({ theme, IsBlack }) =>
+    IsBlack ? theme.COLORS.BLACK : theme.COLORS.PINK};
 
   font-weight: 500;
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  color: ${({ theme, IsBlack }) =>
+    IsBlack ? theme.COLORS.PINK : theme.COLORS.BACKGROUND_700};
 
   margin-top: 2.4rem;
   border: 0;
