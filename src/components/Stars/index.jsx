@@ -9,16 +9,16 @@ export function Stars({ rating = 0 }) {
 
   while (rating > 0) {
     if (rating < 1) {
-      stars.push(<BsStarHalf size={14} key={id++} />);
+      stars.push(<BsStarHalf key={id++} />);
       rating--;
     } else {
-      stars.push(<BsStarFill size={14} key={id++} />);
+      stars.push(<BsStarFill key={id++} />);
       rating--;
     }
   }
 
   while (restStars >= 1) {
-    stars.push(<BsStar size={14} key={id++} />);
+    stars.push(<BsStar key={id++} />);
     restStars--;
   }
 
