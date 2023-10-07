@@ -5,27 +5,27 @@ The goal of the project is to learn about React.
 
 ### Sign In
 
-![App Screenshot](./assets/signIn.png)
+![App Screenshot](./src/assets/signIn.png)
 
 ### Sign Up
 
-![App Screenshot](./assets/signUp.png)
+![App Screenshot](./src/assets/signUp.png)
 
 ### Home
 
-![App Screenshot](./assets/home.png)
+![App Screenshot](./src/assets/home.png)
 
 ### Profile
 
-![App Screenshot](./assets/profile.png)
+![App Screenshot](./src/assets/profile.png)
 
 ### New
 
-![App Screenshot](./assets/new.png)
+![App Screenshot](./src/assets/new.png)
 
 ### Details
 
-![App Screenshot](./assets/details.png)
+![App Screenshot](./src/assets/details.png)
 
 
 ## Apprenticeship
