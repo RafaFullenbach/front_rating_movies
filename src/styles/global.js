@@ -12,7 +12,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_500};
         
         font-size: 1.6rem;
         color: ${({ theme }) => theme.COLORS.WHITE};
@@ -21,6 +21,8 @@ export default createGlobalStyle`
 
         ::-webkit-scrollbar {
             width: 0.8rem;
+            
+         
         }
 
         ::-webkit-scrollbar-track {
@@ -31,6 +33,7 @@ export default createGlobalStyle`
             background: ${({ theme }) => theme.COLORS.PINK};
 
             border-radius: 0.8rem;
+
         }
     }
 
