@@ -1,33 +1,15 @@
 /* eslint-disable react/prop-types */
 import { Container } from "./styles";
-import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+
 import { Tag } from "../../components/Tag";
+import { Stars } from "../../components/Stars";
 
 export function Note({ data, ...rest }) {
-  let stars = [];
-  let rating = data.rating;
-  let restStars = 5 - data.rating;
-  let id = 1;
-
-  while (rating > 0) {
-    if (rating < 1) {
-      stars.push(<BsStarHalf size={14} key={id++} />);
-      rating--;
-    } else {
-      stars.push(<BsStarFill size={14} key={id++} />);
-      rating--;
-    }
-  }
-
-  while (restStars >= 1) {
-    stars.push(<BsStar size={14} key={id++} />);
-    restStars--;
-  }
-
   return (
     <Container {...rest}>
       <h1>{data.title}</h1>
-      {<div>{stars}</div>}
+
+      <Stars rating={data.rating} />
 
       <p>{data.description}</p>
 
