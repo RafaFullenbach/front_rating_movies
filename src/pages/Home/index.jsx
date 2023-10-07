@@ -1,8 +1,10 @@
-import { Container, Content } from "./style";
+import { Container, Content, Notes } from "./style";
+import { AiOutlinePlus } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header";
-import { Section } from "../../components/Section";
 import { Note } from "../../components/Note";
+import { Button } from "../../components/Button";
 
 export function Home() {
   return (
@@ -10,55 +12,32 @@ export function Home() {
       <Header />
 
       <Content>
-        <Section title="Meus filmes" hasButton>
-          <Note
-            data={{
-              title: "O Resgate",
-              description: "Filme sobre o resgate de um refém",
-              rating: 2.5,
-              tags: [
-                { id: "1", name: "Ação" },
-                { id: "2", name: "Drama" },
-              ],
-            }}
-          />
+        <div>
+          <h2>Meus filmes</h2>
 
-          <Note
-            data={{
-              title: "O Resgate",
-              description: "Filme sobre o resgate de um refém",
-              rating: 2.5,
-              tags: [
-                { id: "1", name: "Ação" },
-                { id: "2", name: "Drama" },
-              ],
-            }}
-          />
+          <Link to="/new">
+            <Button
+              className="addFilm"
+              title="Adicionar filme"
+              icon={AiOutlinePlus}
+              to="/new"
+            />
+          </Link>
+        </div>
 
+        <Notes>
           <Note
             data={{
-              title: "O Resgate",
-              description: "Filme sobre o resgate de um refém",
-              rating: 2.5,
+              title: "Harry potter e a pedra filosofal",
+              description: "Filme sobre bruxos",
+              rating: 5,
               tags: [
-                { id: "1", name: "Ação" },
-                { id: "2", name: "Drama" },
+                { id: "1", name: "Fantasia" },
+                { id: "2", name: "Aventura" },
               ],
             }}
           />
-
-          <Note
-            data={{
-              title: "O Resgate",
-              description: "Filme sobre o resgate de um refém",
-              rating: 2.5,
-              tags: [
-                { id: "1", name: "Ação" },
-                { id: "2", name: "Drama" },
-              ],
-            }}
-          />
-        </Section>
+        </Notes>
       </Content>
     </Container>
   );
